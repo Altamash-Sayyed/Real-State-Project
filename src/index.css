@@ -1,13 +1,36 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+.dropbtn {  
+    background-color: yellow;  
+    color: black;  
+    padding: 10px;  
+    font-size: 12px;  
+}  
+.dropdown {  
+    display: inline-block;  
+    position: relative  
+}  
+.dropdown-content {  
+    position: absolute;  
+    background-color: lightgrey;  
+    min-width: 200px;  
+    display: none;  
+    z-index: 1;  
+}  
+.dropdown-content p {  
+    color: black;  
+    padding: 12px 16px;  
+    text-decoration: none;  
+    display: block;  
+}  
+.dropdown-content p:hover {  
+    background-color: orange;  
+}  
+.dropdown:hover .dropdown-content {  
+    display: block;  
+}  
+.dropdown:hover .dropbtn {  
+    background-color: grey;  
+}  
